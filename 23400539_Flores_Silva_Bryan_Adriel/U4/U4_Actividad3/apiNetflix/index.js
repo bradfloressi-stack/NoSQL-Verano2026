@@ -1,12 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require("mongoose");
-const cors = requiere("cors");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 app.use(morgan('dev'));
+app.use(cors());
 
 mongoose.connect("mongodb+srv://grupo:grupo@servidorprueba.ygegryf.mongodb.net/netflix").then(() => {
     console.log("Conectado a la base de datos");
