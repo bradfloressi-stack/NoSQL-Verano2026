@@ -55,7 +55,7 @@ app.listen(PORT, () => {
 
 // Ruta principal del servidor
 app.get('/', (req, res) => {
-    res.send('¡Hola Mundo!');
+    res.send('API Netflix. Peliculas y series.');
 });
 
 // ---------------------- RUTAS PARA LA COLECCIÓN SERIES ----------------------
